@@ -1,0 +1,54 @@
+{
+    "name": "duroom/sticky",
+    "description": "Pin discussions to the top of the list.",
+    "type": "duroom-extension",
+    "keywords": [
+        "discussion"
+    ],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/DuRoom/core/issues",
+        "source": "https://github.com/DuRoom/sticky",
+        "forum": "https://discuss-duroom.js.org"
+    },
+    "homepage": "https://duroom.js.org",
+    "require": {
+        "duroom/core": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "DuRoom\\Sticky\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "duroom-extension": {
+            "title": "Sticky",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-thumbtack",
+                "backgroundColor": "#D13E32",
+                "color": "#fff"
+            }
+        },
+        "duroom-cli": {
+            "modules": {
+                "admin": true,
+                "forum": true,
+                "js": true,
+                "jsCommon": false,
+                "css": true,
+                "gitConf": true,
+                "githubActions": true,
+                "prettier": true,
+                "typescript": false,
+                "bundlewatch": false,
+                "backendTesting": false,
+                "editorConfig": true,
+                "styleci": true
+            }
+        }
+    }
+}
